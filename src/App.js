@@ -21,17 +21,20 @@ import { MyContextProvider } from './component/Datas/DataContext.jsx';
 import Checkout from './component/Checkout/checkout.jsx';
 import PaymentPage from './component/Checkout/PlaceOrder.jsx'; // Import the PaymentPage component
 import SideMenu from './component/Home/SideMenu.jsx';
+import { HashRouter } from "react-router-dom";
+
 
 const App = () => {
   const [isLoggedIn, setLoggedIn] = useState(false);
 
   // Ensure that BrowserRouter wraps the entire application
   return (
+    
     <CartProvider>
       <MyContextProvider>
-        <Router>
+      <HashRouter>
           <AppContent isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} />
-        </Router>
+        </HashRouter>
       </MyContextProvider>
     </CartProvider>
   );
