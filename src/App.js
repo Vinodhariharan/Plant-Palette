@@ -32,9 +32,9 @@ const App = () => {
     
     <CartProvider>
       <MyContextProvider>
-      <HashRouter>
+        <Router>
           <AppContent isLoggedIn={isLoggedIn} setLoggedIn={setLoggedIn} />
-        </HashRouter>
+        </Router>
       </MyContextProvider>
     </CartProvider>
   );
