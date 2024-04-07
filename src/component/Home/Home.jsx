@@ -21,7 +21,7 @@ const Home = () => {
         <div className='catbar'>
           <GardenCategoryCard
             category="Indoor Plants"
-            image="../../images/plants/calathea-orbifolia.jpg"
+            image={require("../../assets/images/plants/calathea-orbifolia.jpg")}
             link="/productList/flowers"
             subtitle="Bring nature indoors with vibrant green friends."
           />
