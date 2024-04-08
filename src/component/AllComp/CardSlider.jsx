@@ -38,12 +38,7 @@ function ProductCardSlider({ products }) {
             marginBottom: '30px'
         }}>
             <Slick {...settings}>
-                {products.map((product, index) => (
-                    <ProductCard
-                        key={product.id || index}
-                        product={product}
-                    />
-                ))}
+                {products.map((product, index) => (<ProductCard key={product.id || index} product={product} />))}
             </Slick>
         </div>
     );
