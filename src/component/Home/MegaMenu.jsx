@@ -18,31 +18,31 @@ const MegaMenu = () => {
         <div className="content">
           <ul className="links">
             <li>
-              <a href='/PlantPaletteDeploy/#/productList/trendingPlants' className="desktop-link">Plants</a>
+              <a href='/productList/trendingPlants' className="desktop-link">Plants</a>
               <input type="checkbox" id="show-plants" />
               <label htmlFor="show-plants">Plants</label>
               <ul>
-                <li><a className='pagemaps' href='/PlantPaletteDeploy/#/productList/flowers'>Flowers</a></li>
-                <li><a className='pagemaps' href='/PlantPaletteDeploy/#/productList/shrubs'>Shrubs</a></li>
-                <li><a className='pagemaps' href='/PlantPaletteDeploy/#/productList/trees'>Trees</a></li>
-                <li><a className='pagemaps' href='/PlantPaletteDeploy/#/productList/indoorPlants'>Indoor Plants</a></li>
-                <li><a className='pagemaps' href='/PlantPaletteDeploy/#/productList/seeds'>Seeds (Flower, Vegetable, Herb)</a></li>
+                <li><a className='pagemaps' href='/productList/flowers'>Flowers</a></li>
+                <li><a className='pagemaps' href='/productList/shrubs'>Shrubs</a></li>
+                <li><a className='pagemaps' href='/productList/trees'>Trees</a></li>
+                <li><a className='pagemaps' href='/productList/indoorPlants'>Indoor Plants</a></li>
+                <li><a className='pagemaps' href='/productList/seeds'>Seeds (Flower, Vegetable, Herb)</a></li>
               </ul>
             </li>
             <li>
-            <a href='/PlantPaletteDeploy/#/productList/tools' className="desktop-link">Tools</a>
+            <a href='/productList/tools' className="desktop-link">Tools</a>
               <input type="checkbox" id="show-tools" />
               <label htmlFor="show-tools">Tools</label>
               <ul>
-                <li><a className='pagemaps' href='/PlantPaletteDeploy/#/productList/EssentialTools'>Essential Tools</a></li>
-                <li><a className='pagemaps' href='/PlantPaletteDeploy/#/productList/HelpfulTools'>Helpful Tools</a></li>
-                <li><a className='pagemaps' href='/PlantPaletteDeploy/#/productList/UsefulTools'>Useful Tools</a></li>
+                <li><a className='pagemaps' href='/productList/EssentialTools'>Essential Tools</a></li>
+                <li><a className='pagemaps' href='/productList/HelpfulTools'>Helpful Tools</a></li>
+                <li><a className='pagemaps' href='/productList/UsefulTools'>Useful Tools</a></li>
                 {/* <li><a className='pagemaps' href='/productList'>Trowels</a></li>
                 <li><a className='pagemaps' href='/productList'>Hoes</a></li> */}
               </ul>
             </li>
             <li>
-              <a href='/PlantPaletteDeploy/#/productList/containers' className="desktop-link">Containers</a>
+              <a href='/productList/containers' className="desktop-link">Containers</a>
               <input type="checkbox" id="show-containers" />
               <label htmlFor="show-containers">Containers</label>
               <ul>
@@ -50,7 +50,7 @@ const MegaMenu = () => {
               </ul>
             </li>
             <li>
-            <a href='/PlantPaletteDeploy/#/productList/fertilizers' className="desktop-link">Fertilizers</a>
+            <a href='/productList/fertilizers' className="desktop-link">Fertilizers</a>
               <input type="checkbox" id="show-soil-fertilizers" />
               <label htmlFor="show-soil-fertilizers">Soil and Fertilizers</label>
               {/* <ul>
