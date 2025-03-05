@@ -12,14 +12,14 @@ import ModalClose from '@mui/joy/ModalClose';
 import Stack from '@mui/joy/Stack';
 import Typography from '@mui/joy/Typography';
 import { Badge } from '@mui/material';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { CartContext } from './useCart'; // Import the CartContext
 import { CartCard } from './CartCard';
 
 export default function CartDrawer() {
   const [open, setOpen] = useState(false);
   const {cartItems, addToCart } = useContext(CartContext);
-  const history = useHistory();
+  const history = useNavigate();
   var storedCartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
   useEffect(() => {
     // Fetch cartItems from local storage on mount
@@ -29,7 +29,7 @@ export default function CartDrawer() {
 
   const handleCheckout = () => {
     // Redirect to the checkout page
-    history.push('/checkout');
+    history('/checkout');
     // Close the cart drawer
     setOpen(false);
   };

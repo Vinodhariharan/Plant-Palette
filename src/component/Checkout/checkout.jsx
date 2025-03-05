@@ -3,15 +3,14 @@ import Typography from '@mui/joy/Typography';
 import Divider from '@mui/joy/Divider';
 import Button from '@mui/joy/Button';
 import Stack from '@mui/joy/Stack';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { CartContext } from '../AllComp/useCart';
 import Product from './Product';
 import PaymentPage from './PlaceOrder'; // Import the PaymentPage component
-import Dialog from '@mui/material/Dialog';
 
-const Checkout = () => {
+const Checkout = () => {  
   const { cartItems, clearCart } = useContext(CartContext);
-  const history = useHistory();
+  const history = useNavigate();
   const [openDialog, setOpenDialog] = useState(false); // State for dialog visibility
 
   const handlePlaceOrder = () => {
@@ -24,7 +23,7 @@ const Checkout = () => {
 
   const handleCloseDialog = () => {
     setOpenDialog(false); // Close the dialog
-    history.push('/'); // Redirect to the home page or any other page after closing the dialog
+    history('/'); // Redirect to the home page or any other page after closing the dialog
   };
 
   return (

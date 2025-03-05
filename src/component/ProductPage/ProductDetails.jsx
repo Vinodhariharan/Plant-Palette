@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom/cjs/react-router-dom.min";
+import { useParams } from "react-router-dom";
 import ProductPage from "./ProductPage.jsx";
 import { useContext } from "react";
 import { DataContext } from "../Datas/DataContext.jsx";

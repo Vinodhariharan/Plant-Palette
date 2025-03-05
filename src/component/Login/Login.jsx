@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, Snackbar, Alert } from '@mui/material';
 import '../../assets/css/Login.css';
 import pic from '../../assets/images/gardeningpic1.gif';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Input from '@mui/joy/Input';
 import axios from 'axios';
 
@@ -11,7 +11,7 @@ function Login({ setLoggedIn }) {
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
   const [snackbarOpen, setSnackbarOpen] = useState(false);
-  const history = useHistory();
+  const history = useNavigate();
 
   const handleLogin = () => {
     // Your JSON server endpoint
@@ -23,7 +23,7 @@ function Login({ setLoggedIn }) {
         if (response.data.length > 0) {
           // User exists, set login state to true and redirect to the home page
           setLoggedIn(true);
-          history.push('/');
+          history('/');
         } else {
           // User doesn't exist, show an error message
           setError('User does not exist or The Password is wrong. Please check your credentials.');

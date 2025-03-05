@@ -3,7 +3,8 @@ import Card from '@mui/joy/Card';
 import CardCover from '@mui/joy/CardCover';
 import CardContent from '@mui/joy/CardContent';
 import Typography from '@mui/joy/Typography';
-import { Button, Link } from '@mui/joy';
+import { Button } from '@mui/joy';
+import { Link } from 'react-router-dom';
 
 export default function GardenCategoryCard({ category, image, link, subtitle }) {
   return (
@@ -33,7 +34,7 @@ export default function GardenCategoryCard({ category, image, link, subtitle }) 
           {category}
         </Typography>
         <Typography sx={{ color: '#fff' }}>{subtitle}</Typography>
-        <Link href={link}>
+        <Link to={link}>
           <Button
             variant="solid"
             color="primary"

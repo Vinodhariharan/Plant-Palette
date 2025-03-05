@@ -5,12 +5,12 @@ import Card from '@mui/joy/Card';
 import CardContent from '@mui/joy/CardContent';
 import CardOverflow from '@mui/joy/CardOverflow';
 import Chip from '@mui/joy/Chip';
-import Link from '@mui/joy/Link';
 import Typography from '@mui/joy/Typography';
 import ArrowOutward from '@mui/icons-material/ArrowOutward';
 import { Skeleton } from '@mui/material';
 import '../../assets/css/button.css';
 import { CartContext } from "./useCart.js";
+import { Link } from 'react-router-dom';
 
 export default function ProductCard({
   key,
@@ -50,7 +50,7 @@ export default function ProductCard({
         )}
         {product.title ? (
           <Link
-            href={`/products/${product.link}`}
+            to={`/products/${product.link}`}
             fontWeight="md"
             color="neutral"
             textColor="text.primary"
