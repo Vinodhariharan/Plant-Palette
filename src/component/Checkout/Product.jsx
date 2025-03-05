@@ -7,7 +7,7 @@ const Product = ({ product }) => {
     <div>
       <Stack direction="row"  justifyContent="space-between">
         <Stack direction='row' spacing={2} alignItems="center" sx={{ mt: 2 }}  >
-        <img src={product.imageSrc} alt={product.title} style={{ width: '100px', height: '100px', objectFit: 'cover', borderRadius: '4px', marginTop:'0' }} />
+        <img src={`${process.env.PUBLIC_URL}/${product.imageSrc}`} alt={product.title} style={{ width: '100px', height: '100px', objectFit: 'cover', borderRadius: '4px', marginTop:'0' }} />
         <Stack direction="column" spacing={1}>
           <Typography variant="h6">{product.title}</Typography>
           <Typography variant="body2">Type: {product.Type}</Typography>

@@ -21,7 +21,7 @@ const ImageSlider = ({ images }) => {
         {images.map((item, index) => (
           <div key={item.id || index}>
             {item.src ? (
-              <img src={item.src} alt={item.alt} />
+              <img src={`${process.env.PUBLIC_URL}/${item.src}`} alt={item.alt} />
             ) : (
               // Display Skeleton for the image while loading
               <Skeleton variant="rectangular" width={1000} height={600} />

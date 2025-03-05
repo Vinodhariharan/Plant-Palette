@@ -22,7 +22,8 @@ function ProductPage({ product }) {
   return (
     <Grid container  display="flex" justifyContent="center" alignItems="flex-start" className="product-page">
       <Grid item xs={6} className="product-image" >
-        <img src={product.imageSrc} alt={product.title} style={{marginTop:'0',width:'100%',}} />
+        <img         src={`${process.env.PUBLIC_URL}/${product.imageSrc}`}
+ alt={product.title} style={{marginTop:'0',width:'100%',}} />
       </Grid>
       <Grid item xs={6} className="product-details" >
         <Container>

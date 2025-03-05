@@ -11,8 +11,8 @@ export default function GardenCategoryCard({ category, image, link, subtitle }) 
     <Card sx={{ minHeight: '280px', width: '100%', margin: '20px', display: 'flex', flexDirection: 'column' }}>
       <CardCover>
         <img
-          src={image}
-          srcSet={`${image} 2x`}
+          src={`${process.env.PUBLIC_URL}/${image}`}
+          srcSet={`${process.env.PUBLIC_URL}/${image} 2x`}
           loading="lazy"
           alt={category}
           style={{ width: '100%', height: '100%', objectFit: 'cover' }}

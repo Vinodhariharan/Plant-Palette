@@ -32,8 +32,8 @@ export function CartCard({
                 <CardOverflow>
                     <AspectRatio ratio="1" sx={{ width: 200 }}>
                         <img
-                            src={product.imageSrc}
-                            srcSet={`${product.imageSrc} 2x`}
+                             src={`${process.env.PUBLIC_URL}/${product.imageSrc}`}
+                             srcSet={`${process.env.PUBLIC_URL}/${product.imageSrc} 2x`}
                             loading="lazy"
                             alt={product.title}
                             key={product.key}
