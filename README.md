@@ -26,7 +26,7 @@ To run the project locally:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/plant-palette.git
+   git clone https://github.com/Vinodhariharan/Plant-Palette.git
    ```
 2. Navigate to the project folder:
    ```sh
